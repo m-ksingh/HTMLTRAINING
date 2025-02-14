@@ -1,0 +1,268 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Task Manager</title> 
+    <link rel="stylesheet" href="/styles/main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head> 
+<body> 
+    <header> 
+        <h1>Task Manager</h1> 
+        <nav class="sidebar"> 
+            <ul> 
+                <li><a href="#">Dashboard</a></li> 
+                <li><a href="#">Tasks</a></li> 
+                <li><a href="#">Settings</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+
+    <section id="task-form"> 
+        <h2>Add New Task</h2> 
+        <form> 
+            <input type="text" id="task-title" placeholder="Enter task title" required> 
+            <textarea id="task-details" placeholder="Task details"></textarea> 
+            <button type="submit">Add Task</button> 
+        </form> 
+    </section>
+
+    <section id="task-list"> 
+        <h2>Tasks</h2> 
+        <ul> 
+            <li>Task 1 - <span>Pending</span></li> 
+            <li>Task 2 - <span>Completed</span></li> 
+        </ul> 
+    </section>
+
+  <form>
+
+    <label for="task-title">Task Title</label> 
+    <input type="text" id="task-title" aria-label="Task Title" required>
+    <button aria-label="Add a new task">Add Task</button>
+
+    <button class="button-primary"> 
+        <i class="fas fa-plus"></i> Add Task 
+    </button>
+    
+  </form>
+
+  <section class="hospital-task"> 
+    <h2>Patient Care Tasks</h2> 
+    <ul> 
+        <li>✔ Administer Medication - <span>Completed</span></li> 
+        <li>❗ Monitor Vital Signs - <span>Pending</span></li> 
+    </ul> 
+</section>
+
+<form> 
+    <label for="nurse">Assign to Nurse:</label> 
+    <select id="nurse"> 
+        <option>John Doe</option> 
+        <option>Jane Smith</option> 
+    </select> 
+    <button type="submit">Assign Task</button> 
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<label for="task-deadline">Deadline:</label> 
+<input type="datetime-local" id="task-deadline">
+<br/>
+<br/>
+
+<label> 
+    <input type="checkbox" id="task-completed"> Mark as Completed 
+</label>
+
+<form>
+    <label for="task-owner">Assign To:</label> 
+    <input type="email" id="task-owner" placeholder="Enter team member email" required>
+    </form>
+
+
+
+    <section> 
+        <h2>Task List</h2> 
+        <ul> 
+            <li>🔴 <strong>High Priority:</strong> Submit report</li> 
+            <li>🟡 <strong>Medium Priority:</strong> Update meeting notes</li> 
+            <li>🟢 <strong>Low Priority:</strong> Review project plan</li> 
+        </ul> 
+    </section>
+
+
+
+    <section> 
+        <h2>Project Completion Steps</h2> 
+        <ol> 
+            <li>Gather requirements</li> 
+            <li>Develop features</li> 
+            <li>Test application</li> 
+            <li>Deploy to production</li> 
+        </ol> 
+    </section>
+
+
+
+    <section> 
+        <h2>Task Status Guide</h2> 
+        <dl> 
+            <dt>🔴 High Priority</dt> 
+            <dd>Must be completed immediately</dd> 
+             
+            <dt>🟡 Medium Priority</dt> 
+            <dd>Should be completed soon</dd> 
+     
+            <dt>🟢 Low Priority</dt> 
+            <dd>Can be completed later</dd> 
+        </dl> 
+    </section>
+
+
+    <article> 
+        <h2>Work Tasks</h2> 
+        <ul> 
+            <li>Prepare financial report</li> 
+            <li>Review meeting notes</li> 
+        </ul> 
+    </article> 
+     
+    <article> 
+        <h2>Personal Tasks</h2> 
+        <ul> 
+            <li>Book doctor’s appointment</li> 
+            <li>Buy groceries</li> 
+        </ul> 
+    </article>
+
+
+
+    <aside> 
+        <h2>Filter Tasks</h2> 
+        <ul> 
+            <li><button>All Tasks</button></li> 
+            <li><button>Completed</button></li> 
+            <li><button>Pending</button></li> 
+        </ul> 
+    </aside>
+
+
+    <section> 
+        <h2>Doctor's Tasks</h2> 
+        <ul> 
+            <li>🔴 Check patient test results</li> 
+            <li>🟡 Approve prescriptions</li> 
+        </ul> 
+    </section> 
+     
+    <section> 
+        <h2>Nurse's Tasks</h2> 
+        <ul> 
+            <li>🟢 Administer medication</li> 
+            <li>🟡 Record patient vitals</li> 
+        </ul> 
+    </section>
+
+
+    <aside> 
+        <h2>Task Filters</h2> 
+        <ul> 
+            <li><button>Critical Cases</button></li> 
+            <li><button>Routine Checkups</button></li> 
+        </ul> 
+    </aside>
+
+
+
+
+    <ul> 
+        <li>🔴 <strong>High Priority:</strong> Submit report</li> 
+        <li>🟡 <strong>Medium Priority:</strong> Update meeting notes</li> 
+        <li>🟢 <strong>Low Priority:</strong> Review project plan</li> 
+    </ul>
+
+
+    <ul> 
+        <li><i class="fas fa-exclamation-circle"></i> Urgent Task</li> 
+        <li><i class="fas fa-check-circle"></i> Completed Task</li> 
+    </ul>
+
+
+    <ul> 
+        <li><img src="assets/user1.jpg" alt="John Doe"> Complete report</li> 
+        <li><img src="assets/user2.jpg" alt="Jane Smith"> Schedule team meeting</li> 
+    </ul>
+
+
+
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Task</th> 
+                <th>Status</th> 
+                <th>Due Date</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr> 
+                <td>Complete Report</td> 
+                <td><button class="status-btn status-pending">Pending</button></td> 
+                <td>March 20, 2024</td> 
+            </tr> 
+            <tr> 
+                <td> Meeting Notes</td> 
+                <td><button class="status-btn status-in-progress">In Progress</button></td> 
+                <td>March 22, 2024</td> 
+            </tr> 
+            <tr> 
+                <td>Complete Meeting Notes</td> 
+                <td><button class="status-btn status-completed">In Progress</button></td> 
+                <td>March 23, 2024</td> 
+            </tr> 
+        </tbody> 
+    </table>
+
+<br/>
+<br/>
+
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Task</th> 
+                <th>Assigned To</th> 
+                <th>Priority</th> 
+                <th>Due Date</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr> 
+                <td>Administer Medication</td> 
+                <td><img src="/assets/nurse1.jpg" alt="Nurse A"> Nurse A</td> 
+                <td>🔴 High</td> 
+                <td>March 21, 2024</td> 
+            </tr> 
+            <tr> 
+                <td>Check Vitals</td> 
+                <td><img src="/assets/nurse2.png" alt="Nurse B"> Nurse B</td> 
+                <td>🟡 Medium</td> 
+                <td>March 22, 2024</td> 
+            </tr> 
+        </tbody> 
+    </table>
+
+
+
+<script src="/style.js"/>
+</body> 
+</html>
